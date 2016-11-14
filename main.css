@@ -140,11 +140,12 @@ body {
     width: inherit;
 }
 
-<!--fonts-- >
-#p .raleway {
-
-    font-family: 'Raleway', sans-serif;
-
-    src: url(https://fonts.googleapis.com/css?family=Raleway);
+.Raleway {
+        font-family: 'Raleway', sans-serif;
 }
+
+.Muli {
+    font-family: 'Muli', sans-serif;
+}
+
 
