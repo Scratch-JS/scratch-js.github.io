@@ -19,14 +19,36 @@
             <li><a href="examples.html">Examples</a></li>
             <li><a href="documentation.html">Documentation</a></li>
         </ul>
+        </nav>
+    <nav class="main">
+        <ul>
 
-
-
-
+            <li class="menu">
+                <a class="fa-bars" onclick="openNav()">Menu</a>
+            </li>
+        </ul>
     </nav>
 </header>
+<div id="mySidenav" class="sidenav">
+    <a class="Ubuntu" href="index.html">Home</a>
+    <a class="Ubuntu" href="getting-started.html">Getting Started</a>
+    <a class="Ubuntu" href="examples.html">Examples</a>
+    <a class="Ubuntu" href="documentation.html">Documentation</a>
+</div>
+<script>
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+    }
 
-<article class="post">
+
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("main").style.marginLeft= "0";
+    }
+</script>
+
+<article class="post" onmouseover="closeNav()">
 
     <p class="Ubuntu" style="font-size: 20px"><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; There are many people who start programming using Scratch but then get stuck because of the large leap from Scratch's easy to use Drag and Drop interface, to the typing and learning required in JavaScript. For example, many beginners will fall in love with Scratch. With Scratch, they truly learn the fundamentals of Computer Science and Programming. The problem is that they eventually advance to the point where Scratch becomes too slow, and feature lacking for many things.</p>
     <p>&nbsp;</p>

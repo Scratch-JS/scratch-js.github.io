@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>  Scratch-js</title>
+    <title>Scratch-js</title>
     <link rel="stylesheet" href="assets/main.css"></link>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
@@ -19,17 +19,39 @@
             <li><a href="examples.html">Examples</a></li>
             <li><a href="documentation.html">Documentation</a></li>
         </ul>
+    </nav>
+    <nav class="main">
+        <ul>
 
-
-
-
+            <li class="menu">
+                <a class="fa-bars" onclick="openNav()">Menu</a>
+            </li>
+        </ul>
     </nav>
 </header>
+<div id="mySidenav" class="sidenav">
+    <a class="Ubuntu" href="index.html">Home</a>
+    <a class="Ubuntu" href="getting-started.html">Getting Started</a>
+    <a class="Ubuntu" href="examples.html">Examples</a>
+    <a class="Ubuntu" href="documentation.html">Documentation</a>
+</div>
+<script>
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+    }
 
 
-<article class="post">
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("main").style.marginLeft= "0";
+    }
+</script>
 
-    <div class="Ubuntu" style="font-size: 20;"><h1><span>Getting Started</span></h1>
+
+<article class="post" onmouseover="closeNav()">
+
+    <div class="Ubuntu"><h1><span style="font-size: 35px;">Getting Started</span></h1>
     <p><em><span style="font-weight: 400;">This documentation currently only covers using Scratch-JS on Mac and Linux (with python installed):</span></em></p>
     <p>&nbsp;</p>
     <p><span style="font-weight: 400;">Getting started with Scratch-JS is very simple. Just download the index.html, and open a terminal. Then, type the following:</span></p>
