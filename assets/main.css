@@ -2,6 +2,7 @@
 
 body {
     padding-top: 3.5em;
+    background-color: whitesmoke;
 }
 
 #header {
@@ -13,7 +14,7 @@ body {
     -webkit-justify-content: space-between;
     -ms-justify-content: space-between;
     justify-content: space-between;
-    background-color: #858585;
+    background-color: white;
     border-bottom: solid 1px rgba(160, 160, 160, 0.3);
     height: 3.5em;
     left: 0;
@@ -142,57 +143,69 @@ body {
 }
 /*fonts*/
 .Raleway {
+
         font-family: 'Raleway', sans-serif;
 }
 
 .Muli {
+
     font-family: 'Muli', sans-serif;
 }
 
 .RaviPrakash {
+
     font-family: 'Ravi Prakash', cursive;
 }
 
 .Shrikhand {
+
     font-family: 'Shrikhand', cursive;
 }
  .Roboto {
+
      font-family: 'Roboto', sans-serif;
  }
 
  .opensans {
+
      font-family: 'Open Sans', sans-serif;
  }
 .slabo {
+
     font-family: 'Slabo 27px', serif;
 }
 
 .lato {
+
     font-family: 'Lato', sans-serif;
 }
 .Oswald {
-    font-family: 'Oswald', sans-serif;
+    oswald', sans-serif;
 }
 
 .Montserrat {
+
     font-family: 'Montserrat', sans-serif;
 }
 .SourceSansPro {
+
     font-family: 'Source Sans Pro', sans-serif;
 }
 
 .Ubuntu {
+
     font-family: Ubuntu, sans-serif;
 }
 
 .Bungee {
-    font-family: Bungee+Inline, sans-serif;
+
+    font-family: 'Bungee Inline', cursive;
 }
 
 /*info*/
 .post {
     padding: 3em 3em 1em 3em ;
-    background: #ffffff;
+    background: lightskyblue;
     border: solid 1px rgba(160, 160, 160, 0.3);
     margin: 0 0 3em 0;
     position: relative;
