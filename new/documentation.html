@@ -1,66 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Scratch-js</title>
+
+
+
+
+
+    <meta name="viewport" content="width=device-width initial-scale=1.0, maximum-scale=1">
+    <title>Sinjio</title>
     <link rel="stylesheet" href="assets/main.css"></link>
+    <link rel="stylesheet" href="assets/style.css"></link>
+    <link rel="stylesheet" href="assets/styles.css"></link>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Lato|Montserrat|Open+Sans|Oswald|Ubuntu|Ravi+Prakash|Roboto|Shrikhand|Slabo+27px|Source+Sans+Pro" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bungee+Inline" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bungee+Inline|Lato|Montserrat|Open+Sans|Oswald|Ubuntu|Ravi+Prakash|Roboto|Shrikhand|Slabo+27px|Source+Sans+Pro" rel="stylesheet">
+
+    <!-- <style>
+     #view-source {
+       position: fixed;
+       display: block;
+       right: 0;
+       bottom: 0;
+       margin-right: 40px;
+       margin-bottom: 40px;
+       z-index: 900;
+     }
+     </style> -->
+    <style>
+        body {
+            font-family: "Lato", sans-serif;
+        }
+
+        .sidenav {
+            display: none;
+            height: 100%;
+            width: 250px;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color:  #EEEEEE;
+            overflow-x: hidden;
+            padding-top: 60px;
+        }
+
+        .sidenav a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #295BA7;
+            display: block;
+            transition: 0.3s
+        }
+
+        .sidenav a:hover, .offcanvas a:focus{
+            color: #00b9d8m;
+        }
+
+        .sidenav .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+        }
+
+        @media screen and (max-height: 450px) {
+            .sidenav {padding-top: 15px;}
+            .sidenav a {font-size: 18px;}
+
+        }
+
+
+    </style>
+
 </head>
 <body>
-<header id="header">
-<a href="#" style="font-size: 20px" class="Bungee">Scratch-js</a>
-    <nav class="links">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="getting-started.html">Getting Started</a></li>
-            <li><a href="examples.html">Examples</a></li>
-            <li><a href="documentation.html">Documentation</a></li>
-        </ul>
-    </nav>
-    <nav class="main">
-        <ul>
 
-            <li class="menu">
-                <a class="fa-bars" onclick="openNav()">Menu</a>
-            </li>
-        </ul>
-    </nav>
-</header>
+<i style="font-size: 40px"   class="fa fa-bars" aria-hidden="true" onclick="openNav()"></i>
+
 <div id="mySidenav" class="sidenav">
-    <a class="Ubuntu" href="index.html">Home</a>
-    <a class="Ubuntu" href="getting-started.html">Getting Started</a>
-    <a class="Ubuntu" href="examples.html">Examples</a>
-    <a class="Ubuntu" href="documentation.html">Documentation</a>
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="align">&times;</a>
+    <a href="#">Home</a>
+    <a href="#">Examples</a>
+    <a href="#">Documentation</a>
+    <a href="#">Contact</a>
 </div>
+
+<center><h1 class="Bungee" style="font-size; 50px">Sinjio</h1></center>
+
+
 <script>
     function openNav() {
-        document.getElementById("mySidenav").style.width = "250px";
-        document.getElementById("main").style.marginLeft = "250px";
+        document.getElementById("mySidenav").style.display = "block";
     }
 
-
     function closeNav() {
-        document.getElementById("mySidenav").style.width = "0";
-        document.getElementById("main").style.marginLeft= "0";
+        document.getElementById("mySidenav").style.display = "none";
     }
 </script>
 
+<div class="main_text" style="background-color: #00b9d8m;">
+    <font color="white" class="Muli" style="font-size: 20px"><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; There are many people who start programming using Scratch but then get stuck because of the large leap from Scratch's easy to use Drag and Drop interface, to the typing and learning required in JavaScript. For example, many beginners will fall in love with Scratch. With Scratch, they truly learn the fundamentals of Computer Science and Programming. The problem is that they eventually advance to the point where Scratch becomes too slow, and feature lacking for many things.</font>
 
-<h1 class="Ubuntu">Examples</h1>
-<article class="post" onmouseover="closeNav()">
-<p>Input examples here</p>
-</article>
+    <p>&nbsp;</p>
+</div>
+
+<strong><p class="Muli" style="font-size: 20px"><br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; That's where Sinjio comes in. Sinjio is a JavaScript library that focuses on easing the transition for beginner programmers from Scratch to JavaScript. With its easy to use, familiar and English like syntax from scratch; and the power, speed, accessibility and portability of JavaScript the best of both worlds can come together in one place. The best part is, the syntax, methods, and properties of scratch will seem very familiar and easy to learn to anybody who has used scratch in the past.</p></strong>
+</main>
+
 </body>
 <footer>
     <section id="footer">
         <center>
-            <a href="https://github.com/Scratch-JS/Scratch-JS" style="color: black"><i class="fa fa-github"></i></a>
-
+            <a href="https://github.com/Scratch-JS/Scratch-JS" class="icon" style="color: black"><i class="fa fa-github"></i></a>
         </center>
-        <center><p class="Montserrat" >Copyright Scratch-JS.</p></center>
+        <center><p class="Montserrat" style="font-size: 17px">Copyright Sinjio.</p></center>
     </section>
 
 </footer>

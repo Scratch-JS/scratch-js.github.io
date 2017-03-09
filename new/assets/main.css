@@ -568,3 +568,7 @@ body {
    .wrap {
       position: relative;
       background-image: url("img/footer.png"); }
+
+   .icon {
+       font-size: 30px;
+   }
